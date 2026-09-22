@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "smeltingoverhauled",
+	"version": "${version}",
+	"name": "Smelting Overhauled",
+	"description": "Automatically smelts mined raw ores and drops animal meats using fractional inventory fuel with in-game priority drag-and-drop controls.",
+	"authors": [
+		"You"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/smeltingoverhauled/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.smeltingoverhauled.SmeltingOverhauled"
+		],
+		"client": [
+			"com.example.smeltingoverhauled.SmeltingClient"
+		]
+	},
+	"mixins": [
+		"smeltingoverhauled.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": ">=26.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {}
+		}
+	}
+}
